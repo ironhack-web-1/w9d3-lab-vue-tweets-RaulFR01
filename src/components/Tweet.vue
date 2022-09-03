@@ -4,7 +4,7 @@
     <div className="body">
       <div className="top">
         <User :name="contentName" :handle="contentHandle" />
-        <span className="timestamp">{{ contentTime }}</span>
+        <Timestamp :timeStamp="contentTime" />
       </div>
       <p className="message">{{ mensaje }}</p>
 
@@ -24,6 +24,8 @@
 <script>
 import ProfileImage from "./ProfileImage.vue";
 import User from "./User.vue";
+import Timestamp from "./Timestamp.vue";
+
 export default {
   data() {
     return {
@@ -49,7 +51,7 @@ export default {
       default: "hohlhorkelrkedklgklrek",
     },
   },
-  components: { ProfileImage, User },
+  components: { ProfileImage, User, Timestamp },
 };
 </script>
 

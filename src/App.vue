@@ -3,7 +3,7 @@
     <div v-for="tweet in tweets" :key="tweet.user">
       <Tweet
         :contentHandle="tweet.user.handle"
-        :src="tweet.user.image"
+        :contentImage="tweet.user.image"
         :contentTime="tweet.timestamp"
         :contentName="tweet.user.name"
         :mensaje="tweet.message"

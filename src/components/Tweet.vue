@@ -29,6 +29,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      contentName: null,
+    };
+  },
   props: {
     contentName: {
       type: String,

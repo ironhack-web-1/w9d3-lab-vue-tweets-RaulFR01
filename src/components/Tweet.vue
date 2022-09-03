@@ -3,14 +3,9 @@
     <ProfileImage :src="contentImage" />
     <div className="body">
       <div className="top">
-        <span className="user">
-          <span className="name">{{ contentName }}</span>
-          <span className="handle">{{ contentHandle }}</span>
-        </span>
-
+        <User :name="contentName" :handle="contentHandle" />
         <span className="timestamp">{{ contentTime }}</span>
       </div>
-
       <p className="message">{{ mensaje }}</p>
 
       <div className="actions">
@@ -28,6 +23,7 @@
 
 <script>
 import ProfileImage from "./ProfileImage.vue";
+import User from "./User.vue";
 export default {
   data() {
     return {
@@ -53,7 +49,7 @@ export default {
       default: "hohlhorkelrkedklgklrek",
     },
   },
-  components: { ProfileImage },
+  components: { ProfileImage, User },
 };
 </script>
 

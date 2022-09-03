@@ -6,8 +6,7 @@
         <User :name="contentName" :handle="contentHandle" />
         <Timestamp :timeStamp="contentTime" />
       </div>
-      <p className="message">{{ mensaje }}</p>
-
+      <Message :mensaje="mensaje" />
       <div className="actions">
         <!-- Font Awesome icons -->
         <i class="far fa-comment"></i>
@@ -25,6 +24,7 @@
 import ProfileImage from "./ProfileImage.vue";
 import User from "./User.vue";
 import Timestamp from "./Timestamp.vue";
+import Message from "./Message.vue";
 
 export default {
   data() {
@@ -51,7 +51,7 @@ export default {
       default: "hohlhorkelrkedklgklrek",
     },
   },
-  components: { ProfileImage, User, Timestamp },
+  components: { ProfileImage, User, Timestamp, Message },
 };
 </script>
 

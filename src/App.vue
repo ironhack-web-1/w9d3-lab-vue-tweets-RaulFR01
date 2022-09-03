@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    <h1>From iteration 1 to 8</h1>
     <div v-for="tweet in tweets" :key="tweet.user">
       <Tweet
         :contentHandle="tweet.user.handle"
@@ -9,6 +10,28 @@
         :mensaje="tweet.message"
       />
     </div>
+    <h2>Iteration 9</h2>
+    <Tweet
+      :contentHandle="tweets[0].user.handle"
+      :contentImage="tweets[0].user.image"
+      :contentTime="tweets[0].timestamp"
+      :contentName="tweets[0].user.name"
+      :mensaje="tweets[0].message"
+    ></Tweet>
+    <Tweet
+      :contentHandle="tweets[1].user.handle"
+      :contentImage="tweets[1].user.image"
+      :contentTime="tweets[1].timestamp"
+      :contentName="tweets[1].user.name"
+      :mensaje="tweets[1].message"
+    ></Tweet>
+    <Tweet
+      :contentHandle="tweets[2].user.handle"
+      :contentImage="tweets[2].user.image"
+      :contentTime="tweets[2].timestamp"
+      :contentName="tweets[2].user.name"
+      :mensaje="tweets[2].message"
+    ></Tweet>
   </div>
 </template>
 
